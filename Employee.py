@@ -38,14 +38,14 @@ class Employee:
             notef.write(note)
             notef.close()
                   
-print("1. Add Employee")
-print("2. Display Employee")
+print("1. Add Employee Detail")
+print("2. Display Employee Detail")
 print("3. Add Notes")
 choice = int(input("Enter The Choice:"))
 if choice == 1:
-      c = Employee()
+      a = Employee()
       obj = myconnect()
-      obj.savetodb(c._empname,c._empemail,c._empmob,c._emptype,c._empexp,c._empsalary)
+      obj.savetodb(a._empname,a._empemail,a._empmob,a._emptype,a._empexp,a._empsalary)
 elif choice==2:
       obj = myconnect()
       obj.display()
